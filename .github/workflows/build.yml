@@ -21,7 +21,7 @@ jobs:
         uses: actions/cache@v2.1.1
         with:
           path: ~/.esy/source
-          key: source-${{ hashFiles('**/index.json') }}
+          key: 2023090201-source-${{ hashFiles('**/index.json') }}
 
       - name: Install
         run: esy install
