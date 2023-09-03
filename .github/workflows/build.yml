@@ -23,8 +23,11 @@ jobs:
           path: ~/.esy/source
           key: source-${{ hashFiles('**/index.json') }}
 
-      - name: esy
-        run: esy
+      - name: esy i
+        run: esy i
+
+      - name: esy build --release
+        run: esy build --release
 
       - name: Test
         run: esy test
